@@ -1,12 +1,22 @@
 *{
     margin: 0;
 }
-
-
-header{
-    background-color: beige;
+:root{
+    --height-sidebar: 100vh;
+    --width-sidebar: 30vw;
+}
+body{
+    display: flex;
+    flex-direction: row;
 }
 
-.background-img{
-    width: 200px;
+.left-sidebar{
+background-image: url("./asset/backgroundpic.jpg");
+background-size: var(--width-sidebar) var(--height-sidebar);
+height: var(--height-sidebar);
+width: var(--width-sidebar);
+display: flex;
+flex-direction: column;
+
+
 }
