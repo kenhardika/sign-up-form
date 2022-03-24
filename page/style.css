@@ -47,9 +47,12 @@ body{
 .header {
     display: flex;
     flex-direction: column;   
+    font-family: 'Quicksand', sans-serif;
     justify-content: center;
     border: 2px solid black;
+    padding: 40px;
 }
+
 .forms {
     display: flex;
     flex-direction: column;   
