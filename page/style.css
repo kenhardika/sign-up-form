@@ -5,6 +5,7 @@
     --height-sidebar: 100vh;
     --width-sidebar: 30vw;
 }
+
 body{
     display: flex;
     flex-direction: row;
@@ -44,6 +45,11 @@ body{
     width: 70vw;
 }
 
+.title-header{
+    font-size: 40px;
+    font-weight: 800;
+}
+
 .header {
     display: flex;
     flex-direction: column;   
@@ -51,11 +57,25 @@ body{
     justify-content: center;
     border: 2px solid black;
     padding: 40px;
+    font-weight:600;
+    background-color: #e7edef;
 }
 
 .forms {
     display: flex;
-    flex-direction: column;   
-    justify-content: center;
+    flex-direction: row;   
+    align-items: center;
     border: 2px solid blue;
+}
+
+.form-left{
+    display: flex;
+    width: 25vw;
+    background-color: greenyellow;
+}
+
+.form-right{
+    display: flex;
+    width: 25vw;
+    background-color: gray;
 }
