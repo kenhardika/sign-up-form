@@ -11,12 +11,35 @@ body{
 }
 
 .left-sidebar{
-background-image: url("./asset/backgroundpic.jpg");
-background-size: var(--width-sidebar) var(--height-sidebar);
-height: var(--height-sidebar);
-width: var(--width-sidebar);
-display: flex;
-flex-direction: column;
+    background-image: url("./asset/backgroundpic.jpg");
+    background-size: var(--width-sidebar) var(--height-sidebar);
+    height: var(--height-sidebar);
+    width: var(--width-sidebar);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.logo{
+    height: 50vh;
+    width: var(--width-sidebar);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.photo-credit{
+    height: 50vh;
+    width: var(--width-sidebar);
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: center;    
+}
 
+.right-sidebar {
+    display: grid;
+    grid-template-rows: 30vh,30vh,40vh;
+    width: 70vw;
 }
