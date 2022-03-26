@@ -4,6 +4,7 @@
 :root{
     --height-sidebar: 100vh;
     --width-sidebar: 30vw;
+    --rows-sidebar-height: 350px;
 }
 
 body{
@@ -41,7 +42,7 @@ body{
 
 .right-sidebar {
     display: grid;
-    grid-template-rows: 30vh,30vh,40vh;
+    grid-template-rows:var(--rows-sidebar-height) var(--rows-sidebar-height) calc(100vh - (var(--rows-sidebar-height) + var(--rows-sidebar-height)) );
     width: 70vw;
 }
 
@@ -63,19 +64,27 @@ body{
 
 .forms {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     border: 2px solid blue;
 }
 
 .form-left{
     display: flex;
-    width: 25vw;
+    height: 300px;
+    width: 500px;
     background-color: greenyellow;
 }
 
 .form-right{
     display: flex;
-    width: 25vw;
+    height: 300px;
+    width: 500px;
     background-color: gray;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
 }
