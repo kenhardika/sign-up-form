@@ -14,31 +14,38 @@ body{
 
 .left-sidebar{
     background-image: url("./asset/backgroundpic.jpg");
-    background-size: var(--width-sidebar) var(--height-sidebar);
+    background-size: 720px 1280px;
     height: var(--height-sidebar);
     width: var(--width-sidebar);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logo{
-    height: 50vh;
+    margin-top: 200px;
+    height: 300px;
     width: var(--width-sidebar);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.542);
 }
 .photo-credit{
-    height: 50vh;
+    height: 50px;
     width: var(--width-sidebar);
     display: flex;
-    padding: 20px;
     align-items: flex-end;
-    justify-content: center;    
+    justify-content: center;
+    color: antiquewhite;  
 }
+
+.photo-credit .text-photo a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
 
 .right-sidebar {
     display: grid;
