@@ -57,13 +57,13 @@ body{
     justify-content: center;
     color: antiquewhite;  
     font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
 }
 
 .photo-credit .text-photo a {
     text-decoration: none;
     color: antiquewhite;
 }
-
 
 .right-sidebar {
     display: grid;
@@ -83,8 +83,16 @@ body{
     justify-content: center;
     border: 2px solid black;
     padding: 40px;
-    font-weight:600;
+    font-size: 22px;
     background-color: #e7edef;
+}
+
+.header p {
+    font-weight:600;
+}
+
+.header p em{
+    font-weight: 8  00;
 }
 
 .forms {
