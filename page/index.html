@@ -54,7 +54,12 @@
                         <label for="email"> Email </label>
                     </div>
                     <input type="email" id="email" name="email" required>
-                    <div>
+                    
+                    <div class="label-password">
+                        <label for="password"> Password</label>
+                    </div>
+                    <input type="password" id="password" name="password" pattern="[A-Z a-z\d]{6}" title="Password needs 6 characters min" required>
+                    <div class="submit-button">
                         <button type="submit">Submit</button>
                     </div>
                 </form>
