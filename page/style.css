@@ -13,7 +13,7 @@ body{
 }
 
 .left-sidebar{
-    background-image: url("./asset/backgroundpic.jpg");
+    background-image: url("./asset/background-min.jpg");
     background-size: 720px 1280px;
     height: var(--height-sidebar);
     width: var(--width-sidebar);
@@ -57,11 +57,11 @@ body{
     justify-content: center;
     color: antiquewhite;  
     font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .photo-credit .text-photo a {
-    text-decoration: none;
+    text-decoration: none;    
     color: antiquewhite;
 }
 
