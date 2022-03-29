@@ -167,6 +167,7 @@ button:active {
 
 .login-account{
     display: flex;
+    padding-top: 10px;
     padding-left: 40px;
     background-color: whitesmoke;
     font-size: 15px;
