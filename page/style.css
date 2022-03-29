@@ -73,8 +73,10 @@ body{
 }
 
 .title-header{
+    color: #de7373;
     font-size: 40px;
     font-weight: 800;
+    padding: 10px 0;
 }
 
 .header {
@@ -83,7 +85,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     justify-content: center;
     padding: 40px;
-    font-size: 22px;
+    font-size: 22px;    
     background-color: whitesmoke;
 }
 
@@ -92,7 +94,11 @@ body{
 }
 
 .header p em{
-    font-weight: 8  00;
+    font-weight: 800;
+}
+
+form{
+    background-color: whitesmoke;
 }
 
 .forms {
@@ -101,7 +107,6 @@ body{
     align-items: center;
     justify-content: space-around;
     font-family: 'PT Sans', sans-serif;
-    background-color: whitesmoke;
 }
 
 .form-left, .form-right{
@@ -132,7 +137,43 @@ input:focus{
     border: 2px solid #de7373;
 }
 
-.footer {
+.log-in-buttons {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Sora', sans-serif;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #de7373;
+    box-shadow: -5px 5px #c16565;
+}
+
+button:hover {
+    background-color: #e28686;
+}
+button:active {
+    transform: translateY(4px);
+    box-shadow: -1px 0 #c16565;
+}
+
+.login-account{
+    display: flex;
+    padding-left: 40px;
+    background-color: whitesmoke;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+}
+.text-login-account a, a:visited {
+    text-decoration: none;
+    color: #de7373;
 }
