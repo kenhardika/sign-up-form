@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Quicksand:wght@300&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Sora:wght@300;400&display=swap" rel="stylesheet">   
 </head>
 <body>
 
@@ -39,37 +40,44 @@
                 So <em>sign up</em> now, we know what you want.
             </p>
         </div>
-
+        <form action="#" method="get">
         <div class="forms">
-
             <div class="form-left">
-                
-                <form action="#" method="get">
-                    <div class="label-first-name">
+                    <div class="input">
                         <label for="first-name"> First Name </label>
+                        <input type="text" id="first-name" name="first-name" maxlength="32" pattern="[A-Z a-z]{1,32}" title="Please enter valid name format, example: Johnny" required>
                     </div>
-                    <input type="text" id="first-name" name="first-name" maxlength="32" pattern="[A-Z a-z]{1,32}" title="Please enter valid name format, example: John Dower" required>
-               
-                    <div class="label-email">
+                    <div class="input">
                         <label for="email"> Email </label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <div class="label-password">
+                    <div class="input">
                         <label for="password"> Password</label>
+                        <input type="password" id="password" name="password" minlength="6" maxlength="25" title="Password needs 6 minimal characters required" required>
                     </div>
-                    <input type="password" id="password" name="password" pattern="[A-Z a-z\d]{6}" title="Password needs 6 characters min" required>
-                    <div class="submit-button">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
             </div>
             <div class="form-right">
-                form right
+                    <div class="input">
+                        <label for="last-name"> Last Name </label>
+                        <input type="text" id="last-name" name="last-name" maxlength="32" pattern="[A-Z a-z]{1,32}" title="Please enter valid name format, example: Johnny" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone"> Phone Numbers </label>
+                        <input type="text" id="phone" name="phone" maxlength="12" pattern="[\d][0-9]{10-12}" required>
+                    </div>
+                    <div class="input">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="6" maxlength="25" title="Password needs 6 minimal characters required" required>
+                    </div> 
             </div>
             
         </div>
-        <div class="log-in-buttons">buttons here</div>
+        <div class="log-in-buttons">buttons here
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        </form>
     </div>
 
    

@@ -15,6 +15,7 @@ body{
 .left-sidebar{
     background-image: url("./asset/background-min.jpg");
     background-size: 720px 1280px;
+    background-position: 40px;
     height: var(--height-sidebar);
     width: var(--width-sidebar);
     display: flex;
@@ -36,7 +37,7 @@ body{
 
 .logo .logo-image img{
     margin-left: 30px;
-    width: 200px;
+    width: 12vw;
     border-radius: 50%;
 }
 
@@ -44,7 +45,7 @@ body{
     margin-left: 20px;
     padding: 10px;
     letter-spacing: 2px;
-    font-size: 27px;
+    font-size: 2vw;
     font-weight: 800;
     font-family: 'Quicksand', sans-serif;
 }
@@ -81,10 +82,9 @@ body{
     flex-direction: column;   
     font-family: 'Quicksand', sans-serif;
     justify-content: center;
-    border: 2px solid black;
     padding: 40px;
     font-size: 22px;
-    background-color: #e7edef;
+    background-color: whitesmoke;
 }
 
 .header p {
@@ -100,22 +100,36 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid blue;
+    font-family: 'PT Sans', sans-serif;
+    background-color: whitesmoke;
 }
 
-.form-left{
+.form-left, .form-right{
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 500px;
-    background-color: greenyellow;
+    height: 30vh;
+    width: 30vw;
+    font-size: 14px;
+    justify-content: center;
+    gap: 30px;
+}
+label{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(43, 43, 43);
+}
+.input {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border: 1px solid rgba(128, 128, 128, 0.646);
+    border-radius: 3px;
 }
 
-.form-right{
-    display: flex;
-    height: 300px;
-    width: 500px;
-    background-color: gray;
+input:focus{
+    outline: none;
+    border: 2px solid #de7373;
 }
 
 .footer {
